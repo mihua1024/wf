@@ -17,4 +17,4 @@ eureka:
 feign:
   hystrix:
     enabled: true
-name: 123
+name: WE
