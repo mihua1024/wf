@@ -1,2 +1,23 @@
+server:
+  port: 8007
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+  instance:
+    prefer-ip-address: true #显示ip地址
+feign:
+  hystrix:
+    enabled: true
+management:
+  security:
+    enabled: true
+
 name: pig
 
