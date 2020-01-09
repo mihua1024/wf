@@ -25,3 +25,6 @@ feign:
   hystrix:
     enabled: true
 name: pig
+management:
+  security:
+    enabled: true
