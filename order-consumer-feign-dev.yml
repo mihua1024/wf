@@ -21,4 +21,4 @@ feign:
 management:
   security:
     enabled: false  
-name: wd
+name: 123
