@@ -24,4 +24,4 @@ eureka:
 feign:
   hystrix:
     enabled: true
-name: wd
+name: pig
