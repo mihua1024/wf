@@ -1,0 +1,26 @@
+server:
+  port: 9002
+spring:
+  application:
+    name: order-consumer-feign
+#  #服务链路追踪
+#  zipkin:
+#    base-url: http://localhost:7004
+#  sleuth:
+#    sampler:
+#      percentage: 1.0
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:ok@localhost:7001/eureka/
+  instance:
+    #在状态栏可见ip
+    prefer-ip-address: true
+feign:
+  hystrix:
+    enabled: true
